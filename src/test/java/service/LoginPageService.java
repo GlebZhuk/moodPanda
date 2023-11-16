@@ -1,6 +1,5 @@
 package service;
 
-
 import model.User;
 import page.LoginPage;
 
@@ -15,6 +14,4 @@ public class LoginPageService {
                 .clickLoginButton();
         return new FeedGlobalPageService();
     }
-
-
 }

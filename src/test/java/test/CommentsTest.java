@@ -8,13 +8,14 @@ import service.FeedGlobalPageService;
 import service.LoginPageService;
 
 public class CommentsTest extends BaseTest {
-    boolean successReplayMessage;
+
     LoginPageService loginPageService = new LoginPageService();
     FeedGlobalPageService feedGlobalPageService;
     DashBoardService dashBoardService;
 
     @Test
     public void verifyCommentsTest() {
+        boolean successReplayMessage;
         User user = new User();
         feedGlobalPageService = loginPageService.login(user);
         dashBoardService = feedGlobalPageService.clickReplayToUser();

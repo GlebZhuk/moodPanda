@@ -30,6 +30,4 @@ public class LoginPage {
     public void clickLoginButton() {
         $(By.xpath(LOGIN_BUTTON)).click();
     }
-
-
 }

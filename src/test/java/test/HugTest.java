@@ -7,12 +7,13 @@ import service.FeedGlobalPageService;
 import service.LoginPageService;
 
 public class HugTest {
-    boolean successHug;
+
     LoginPageService loginPageService = new LoginPageService();
     FeedGlobalPageService feedGlobalPageService;
 
     @Test
     public void verifyHugButtonTest() {
+        boolean successHug;
         User user = new User();
         feedGlobalPageService = loginPageService.login(user);
         successHug = feedGlobalPageService.clickHugToUser();
